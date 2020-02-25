@@ -132,14 +132,14 @@ Container images are configured using parameters passed at runtime (such as thos
 
 | Parameter | Function |
 | :----: | --- |
-| `-p 3478/udp` | Unifi communication port |
-| `-p 10001/udp` | required for AP discovery |
-| `-p 8080` | required for Unifi to function |
+| `-p 3478/udp` | Port used for STUN. |
+| `-p 10001/udp` | 	Port used for device discovery |
+| `-p 8080` | Port used for device and controller communication. |
 | `-p 8081` | Unifi communication port |
-| `-p 8443` | Unifi communication port |
-| `-p 8843` | Unifi communication port |
-| `-p 8880` | Unifi communication port |
-| `-p 6789` | For throughput test |
+| `-p 8443` | Port used for controller GUI/API as seen in a web browser |
+| `-p 8843` | Port used for HTTPS portal redirection. |
+| `-p 8880` | Port used for HTTP portal redirection. |
+| `-p 6789` | Port used for UniFi mobile speed test. |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e MEM_LIMIT=1024M` | Optionally change the Java memory limit (-Xmx) (default is 1024M). |
